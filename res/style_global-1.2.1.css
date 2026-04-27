@@ -1,0 +1,183 @@
+/* =========================================
+   GLOBAL RESET
+========================================= */
+
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.container {
+    max-width: 1100px !important;
+    margin: 10px auto !important;
+    padding: 15px !important;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* =========================================
+   PAGE TITLE
+========================================= */
+
+.app_page_title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.app_page_title h1,
+.app_page_title h2 {
+    font-size: 20px !important;
+    margin: 0;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* =========================================
+   FORM LAYOUT
+========================================= */
+
+.form-transaction {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+/* كل حقل نصف عرض */
+.form-transaction .form-group {
+    width: 48%;
+    margin-bottom: 6px !important;
+}
+
+/* الحقول بعرض كامل */
+.form-transaction .form-group.full-width {
+    width: 100%;
+}
+
+/* =========================================
+   LABELS
+========================================= */
+
+.form-transaction label {
+    font-size: 12px !important;
+    font-weight: 600;
+    margin-bottom: 2px !important;
+    display: block;
+    color: #444;
+}
+
+/* =========================================
+   INPUT FIELDS
+========================================= */
+
+.form-transaction .form-control {
+    height: 30px !important;
+    padding: 4px 8px !important;
+    font-size: 12px !important;
+    border-radius: 6px !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+    width: 100% !important;
+}
+
+.form-transaction .form-control:focus {
+    border-color: #419641 !important;
+    box-shadow: 0 0 0 2px rgba(65,150,65,0.2) !important;
+}
+
+/* textarea */
+.form-transaction textarea.form-control {
+    height: 55px !important;
+    resize: none !important;
+}
+
+/* select */
+.form-transaction select.form-control {
+    height: 30px !important;
+}
+
+/* =========================================
+   FILE INPUT
+========================================= */
+
+input[type="file"] {
+    font-size: 12px;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn {
+    padding: 6px 12px !important;
+    font-size: 13px !important;
+    border-radius: 6px !important;
+    border: none !important;
+    min-width: 140px;
+}
+
+.btn-success {
+    background: linear-gradient(135deg,#419641,#5cb85c) !important;
+}
+
+#SubmitButton {
+    width: 200px !important;
+    margin: 10px auto !important;
+    display: block !important;
+}
+
+/* =========================================
+   TABLE
+========================================= */
+
+.table-responsive {
+    margin-top: 8px !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+/* =========================================
+   NEWS BAR
+========================================= */
+
+.news-bar {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    margin-top: 15px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .form-transaction .form-group {
+        width: 100%;
+    }
+
+    .container {
+        margin: 5px !important;
+        padding: 10px !important;
+    }
+}
